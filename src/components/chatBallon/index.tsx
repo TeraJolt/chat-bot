@@ -66,9 +66,10 @@ export const ChatBallon = ({value, type}:Props) => {
                         ml-[16px]
                     `}
                     shadow-sm
+                    whitespace-pre-line
                 `}
             >
-                {value}
+                    {value}
             </div>
         </div>
     )
