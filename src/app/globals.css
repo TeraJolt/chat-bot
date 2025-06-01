@@ -1,8 +1,180 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Nova Paleta de Cores */
+  /* Brand 1 */
+  --custom-brand-one-50:  #f2f6fb;
+  --custom-brand-one-100: #d8e3f3;
+  --custom-brand-one-200: #b9cce8;
+  --custom-brand-one-300: #7fa1d5;
+  --custom-brand-one-400: #608bcb;
+  --custom-brand-one-500: #4174c1;
+  --custom-brand-one-600: #345f9f;
+  --custom-brand-one-700: #2b4f84;
+  --custom-brand-one-800: #1f3960;
+  --custom-brand-one-900: #192e4d;
+
+  /* Brand 2 */
+  --custom-brand-two-50:  #fff7ee;
+  --custom-brand-two-100: #ffe8cc;
+  --custom-brand-two-200: #ffd199;
+  --custom-brand-two-300: #ffc680;
+  --custom-brand-two-400: #ffba66;
+  --custom-brand-two-500: #ffaf4c;
+  --custom-brand-two-600: #ffa333;
+  --custom-brand-two-700: #ff8c00;
+  --custom-brand-two-800: #f08400;
+  --custom-brand-two-900: #cc7000;
+
+  /* Gray (Cool Gray)*/
+  --custom-cool-gray-50:  #f9fafb;
+  --custom-cool-gray-100: #f3f4f6;
+  --custom-cool-gray-200: #e5e7eb;
+  --custom-cool-gray-300: #d1d5db;
+  --custom-cool-gray-400: #9ca4af;
+  --custom-cool-gray-500: #6b7380;
+  --custom-cool-gray-600: #4b5563;
+  --custom-cool-gray-700: #374151;
+  --custom-cool-gray-800: #1f2937;
+  --custom-cool-gray-900: #0e192a;
+
+  /* Red */
+  --custom-red-50:  #fef2f2;
+  --custom-red-100: #fee2e2;
+  --custom-red-200: #fecaca;
+  --custom-red-300: #fca5a5;
+  --custom-red-400: #f87171;
+  --custom-red-500: #ef4444;
+  --custom-red-600: #dc2626;
+  --custom-red-700: #b91c1c;
+  --custom-red-800: #991b1b;
+  --custom-red-900: #7f1d1d;
+
+  /* Orange */
+  --custom-orange-50:  #fff7ed;
+  --custom-orange-100: #ffedd5;
+  --custom-orange-200: #fed7aa;
+  --custom-orange-300: #fdba74;
+  --custom-orange-400: #fb923c;
+  --custom-orange-500: #f97316;
+  --custom-orange-600: #ea580c;
+  --custom-orange-700: #c2410c;
+  --custom-orange-800: #9a3412;
+  --custom-orange-900: #7c2d12;
+
+  /* Yellow (Amber) */
+  --custom-amber-50:  #fffbeb;
+  --custom-amber-100: #fef3c7;
+  --custom-amber-200: #fde68a;
+  --custom-amber-300: #fcd34d;
+  --custom-amber-400: #fbbf24;
+  --custom-amber-500: #f59e0b;
+  --custom-amber-600: #d97706;
+  --custom-amber-700: #b45309;
+  --custom-amber-800: #92400e;
+  --custom-amber-900: #78350f;
+
+  /* Green (Emerald) */
+  --custom-emerald-50:  #ecfdf5;
+  --custom-emerald-100: #d1fae5;
+  --custom-emerald-200: #a7f3d0;
+  --custom-emerald-300: #6ee7b7;
+  --custom-emerald-400: #34d399;
+  --custom-emerald-500: #10b981;
+  --custom-emerald-600: #059669;
+  --custom-emerald-700: #047857;
+  --custom-emerald-800: #065f46;
+  --custom-emerald-900: #064e3b;
+
+  /* Teal */
+  --custom-teal-50:  #f0fdfa;
+  --custom-teal-100: #ccfbf1;
+  --custom-teal-200: #99f6e4;
+  --custom-teal-300: #5eead4;
+  --custom-teal-400: #2dd4bf;
+  --custom-teal-500: #14b8a6;
+  --custom-teal-600: #0d9488;
+  --custom-teal-700: #0f766e;
+  --custom-teal-800: #115e59;
+  --custom-teal-900: #134e4a;
+
+  /* Cyan */
+  --custom-cyan-50:  #ecfeff;
+  --custom-cyan-100: #cffafe;
+  --custom-cyan-200: #a5f3fc;
+  --custom-cyan-300: #67E8F9;
+  --custom-cyan-400: #22d3ee;
+  --custom-cyan-500: #06b6d4;
+  --custom-cyan-600: #0891b2;
+  --custom-cyan-700: #0e7490;
+  --custom-cyan-800: #155e75;
+  --custom-cyan-900: #164e63;
+
+  /* Light Blue */
+  --custom-light-blue-50:  #eff6ff;
+  --custom-light-blue-100: #e0f2fe;
+  --custom-light-blue-200: #bae6fd;
+  --custom-light-blue-300: #7dd3fc;
+  --custom-light-blue-400: #38bdf8;
+  --custom-light-blue-500: #0ea5e9;
+  --custom-light-blue-600: #0284c7;
+  --custom-light-blue-700: #0369a1;
+  --custom-light-blue-800: #075985;
+  --custom-light-blue-900: #0c4a6e;
+
+  /* Blue */
+  --custom-blue-50:  #eff6ff;
+  --custom-blue-100: #dbeafe;
+  --custom-blue-200: #bfdbfe;
+  --custom-blue-300: #93c5fd;
+  --custom-blue-400: #60a5fa;
+  --custom-blue-500: #3b82f6;
+  --custom-blue-600: #2563eb;
+  --custom-blue-700: #1d4ed8;
+  --custom-blue-800: #1e40af;
+  --custom-blue-900: #1e3a8a;
+
+  /* Indigo */
+  --custom-indigo-50:  #eef2ff;
+  --custom-indigo-100: #e0e7ff;
+  --custom-indigo-200: #c7d2fe;
+  --custom-indigo-300: #a5b4fc;
+  --custom-indigo-400: #818cf8;
+  --custom-indigo-500: #6366f1;
+  --custom-indigo-600: #4f46e5;
+  --custom-indigo-700: #4338ca;
+  --custom-indigo-800: #3730a3;
+  --custom-indigo-900: #312e81;
+
+  /* Purple (Violet) */
+  --custom-violet-50:  #f5f3ff;
+  --custom-violet-100: #ede9fe;
+  --custom-violet-200: #ddd6fe;
+  --custom-violet-300: #c4b5fd;
+  --custom-violet-400: #a78bfa;
+  --custom-violet-500: #8b5cf6;
+  --custom-violet-600: #7c3aed;
+  --custom-violet-700: #6d28d9;
+  --custom-violet-800: #5b21b6;
+  --custom-violet-900: #4c1d95;
+
+  /* Pink */
+  --custom-pink-50:  #fdf2f8;
+  --custom-pink-100: #fce7f3;
+  --custom-pink-200: #fbcfe8;
+  --custom-pink-300: #f9a8d4;
+  --custom-pink-400: #f472b6;
+  --custom-pink-500: #ec4899;
+  --custom-pink-600: #db2777;
+  --custom-pink-700: #be185d;
+  --custom-pink-800: #9d174d;
+  --custom-pink-900: #831843;
+
 }
 
 @theme inline {
